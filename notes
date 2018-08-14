@@ -16,3 +16,9 @@ Useful Things:
   1. Grunt -> Slow, disk based, configuration file(json)
   2. Gulp -> Fast, code based configuration
   3. npm Scripts* -> declared in package.json, convention based pre/post hooks
+
+
+  Transpiling
+  -----------
+  1. Babel* -> Run latest features of JS in ES5
+  2. Typescript -> Superset of JS
