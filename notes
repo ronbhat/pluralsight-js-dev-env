@@ -93,3 +93,19 @@ Continuous Integration
             |-> 4. CircleCI
             |-> 5. Semaphore
             |-> 6. SnapCI
+
+
+Mock HTTP
+---------
+  1. Nock
+  2. Static JSON
+  3. Create develoment webserver
+    |- api-Mock
+    |- JSON Server
+    |- JSON Schema Faker
+    |- Create your own using Browsersync, Express, etc.
+
+  Plan:
+    1. Declare our schema (using JSON Schema Faker)
+    2. Generate Random data (using faker.js, chance.js, randexp.js)(come bundled with JSON schema faker)
+    3. Serve data via API (using JSON Server)
