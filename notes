@@ -23,3 +23,18 @@ Useful Things:
   2. Webpack* -> Bundle more than JS(import CSS, images, etc like JS), built in hot reloading web server
   3. Rollup -> Tree shaking, faster loading production code, quite new, no hot reloading and code splitting yet
   4. JSPM -> Uses system JS(universal module loader), can load modeules at runtime, has its own package manager, uses rollup
+
+  Linting
+  -------
+  1. JSLint
+  2. JSHint
+  3. ESLint* -> Configuring:
+                  1. Config Format ->
+                  2. Built in rules
+                  3. Warnings or errors
+                  4. Which plugins
+                  5. Use preset instead
+
+                  ESLint Rules: 0 -> off
+                                1 -> Warning
+                                2 -> Error
