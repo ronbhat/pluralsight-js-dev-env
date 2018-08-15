@@ -16,3 +16,10 @@ Useful Things:
   1. Grunt -> Slow, disk based, configuration file(json)
   2. Gulp -> Fast, code based configuration
   3. npm Scripts* -> declared in package.json, convention based pre/post hooks
+
+  Transpiling
+  -----------
+  1. Browserify -> Bundle NPM packages for the web, plugin based ecosystem
+  2. Webpack* -> Bundle more than JS(import CSS, images, etc like JS), built in hot reloading web server
+  3. Rollup -> Tree shaking, faster loading production code, quite new, no hot reloading and code splitting yet
+  4. JSPM -> Uses system JS(universal module loader), can load modeules at runtime, has its own package manager, uses rollup
