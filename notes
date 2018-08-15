@@ -38,3 +38,58 @@ Useful Things:
                   ESLint Rules: 0 -> off
                                 1 -> Warning
                                 2 -> Error
+
+	Testing
+	-------
+	Types of Testing: 	Unit
+						Integration
+						UI
+
+	Unit Testing Decesions
+	----------------------
+	1. Testing Framework
+    |->Mocha*(Not with a assertion library unlike Jasmine),
+    |->Jasmine,
+    |->Tape,
+    |->QUnit,
+    |->AVA,
+    |->Jest
+
+	2. Assertion Library
+    |->Chai*
+    |->ShouldJS
+    |->Expect
+    |->Most frameworks have their own assertions built in
+
+	3. Helper Library
+    |->JSDoM(Run DoM-related tests without a browser)
+    |->Cheerio(jQuery for the server, query virtual DoM using jQuery selectors)
+
+	4. Where to run tests
+    |->Browser(Karma, Testem)
+    |->Headless Browser(PhantomJs)
+    |->In-Memory DoM*(JSDoM using Node)
+
+	5. Where to place tests
+    |->Centralized
+    |->Alongside*
+
+	6. When to run tests -> When hit save, Facilitates TDD
+
+
+Continuous Integration
+----------------------
+  Why CI -> Catches mistakes quickly
+  What CI server do -
+                    |->Run automated build on commit
+                    |->Run your tests
+                    |->Check code coverge
+                    |->Automated Deployment
+
+  CI Servers-
+            |-> 1. Travis CI* (Linux Based)
+            |-> 2. Appveyor* (Windows Based)
+            |-> 3. Jenkins
+            |-> 4. CircleCI
+            |-> 5. Semaphore
+            |-> 6. SnapCI
