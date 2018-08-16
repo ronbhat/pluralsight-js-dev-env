@@ -124,3 +124,49 @@ Mock HTTP
        |->Consider organizing by feature.
        |->Extract logic into "POJOs".
 
+  Production Build
+  ----------------
+    1. Minification
+    2. Sourcemaps
+    3. Dynamic HTML
+    4. Cache Busting
+    5. Bundle Splitting
+    6. Error Logging
+
+  Referencing Bundled Assets in HTML
+    1. Hard Coded
+    2. Manipulate via Node
+    3. html-webpack-plugin*
+
+
+  Bundle Splitting
+  ----------------
+    1. Split Bundle based on pages.
+    2. Split bundle based on library/application code.
+
+
+  Cache Busting
+  -------------
+    Done to make sure that the customer receives the latest asset if we have set a long cache expiration time in the header.
+    This saves on HTTP requests.
+    1. Hash the bundle filename(To make sure that the name of the file changes if there is any change to the bundle.)
+    2. Generate HTML dynamically.
+    (Using html-webpack-plugin & webpack-md5-hash)
+
+
+  Error Logging
+  -------------
+  1. TrackJS
+  2. Sentry
+  3. New Relic
+  4. Raygun
+
+  What to look for:
+    1. Error Metadata
+        |->Browser
+        |->Stacktrace
+        |->Previous actions
+        |->Custom API for enhanced tracking
+    2. Notifications & integrations
+    3. Analytics & filtering
+    4. Pricing
