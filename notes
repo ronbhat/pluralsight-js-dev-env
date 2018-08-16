@@ -17,8 +17,100 @@ Useful Things:
   2. Gulp -> Fast, code based configuration
   3. npm Scripts* -> declared in package.json, convention based pre/post hooks
 
-
   Transpiling
   -----------
   1. Babel* -> Run latest features of JS in ES5
   2. Typescript -> Superset of JS
+
+  Bundling
+  -----------
+  1. Browserify -> Bundle NPM packages for the web, plugin based ecosystem
+  2. Webpack* -> Bundle more than JS(import CSS, images, etc like JS), built in hot reloading web server
+  3. Rollup -> Tree shaking, faster loading production code, quite new, no hot reloading and code splitting yet
+  4. JSPM -> Uses system JS(universal module loader), can load modeules at runtime, has its own package manager, uses rollup
+
+  Linting
+  -------
+  1. JSLint
+  2. JSHint
+  3. ESLint* -> Configuring:
+                  1. Config Format ->
+                  2. Built in rules
+                  3. Warnings or errors
+                  4. Which plugins
+                  5. Use preset instead
+
+                  ESLint Rules: 0 -> off
+                                1 -> Warning
+                                2 -> Error
+
+	Testing
+	-------
+	Types of Testing: 	Unit
+						Integration
+						UI
+
+	Unit Testing Decesions
+	----------------------
+	1. Testing Framework
+    |->Mocha*(Not with a assertion library unlike Jasmine),
+    |->Jasmine,
+    |->Tape,
+    |->QUnit,
+    |->AVA,
+    |->Jest
+
+	2. Assertion Library
+    |->Chai*
+    |->ShouldJS
+    |->Expect
+    |->Most frameworks have their own assertions built in
+
+	3. Helper Library
+    |->JSDoM(Run DoM-related tests without a browser)
+    |->Cheerio(jQuery for the server, query virtual DoM using jQuery selectors)
+
+	4. Where to run tests
+    |->Browser(Karma, Testem)
+    |->Headless Browser(PhantomJs)
+    |->In-Memory DoM*(JSDoM using Node)
+
+	5. Where to place tests
+    |->Centralized
+    |->Alongside*
+
+	6. When to run tests -> When hit save, Facilitates TDD
+
+
+Continuous Integration
+----------------------
+  Why CI -> Catches mistakes quickly
+  What CI server do -
+                    |->Run automated build on commit
+                    |->Run your tests
+                    |->Check code coverge
+                    |->Automated Deployment
+
+  CI Servers-
+            |-> 1. Travis CI* (Linux Based)
+            |-> 2. Appveyor* (Windows Based)
+            |-> 3. Jenkins
+            |-> 4. CircleCI
+            |-> 5. Semaphore
+            |-> 6. SnapCI
+
+
+Mock HTTP
+---------
+  1. Nock
+  2. Static JSON
+  3. Create develoment webserver
+    |- api-Mock
+    |- JSON Server
+    |- JSON Schema Faker
+    |- Create your own using Browsersync, Express, etc.
+
+  Plan:
+    1. Declare our schema (using JSON Schema Faker)
+    2. Generate Random data (using faker.js, chance.js, randexp.js)(come bundled with JSON schema faker)
+    3. Serve data via API (using JSON Server)
