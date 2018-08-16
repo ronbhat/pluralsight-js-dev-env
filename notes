@@ -114,3 +114,13 @@ Mock HTTP
     1. Declare our schema (using JSON Schema Faker)
     2. Generate Random data (using faker.js, chance.js, randexp.js)(come bundled with JSON schema faker)
     3. Serve data via API (using JSON Server)
+
+
+  Project Structure
+  -----------------
+    1. Include an example app
+    2. Project structure tips
+       |->Put JS in a .js file
+       |->Consider organizing by feature.
+       |->Extract logic into "POJOs".
+

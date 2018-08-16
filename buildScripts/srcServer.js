@@ -1,10 +1,6 @@
 import express from 'express';
 import path from 'path';
 import open from 'open';
-
-const port = 3000;
-const app = express();
-
 import webpack from 'webpack';
 import config from '../webpack.config.dev';
 
