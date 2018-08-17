@@ -182,3 +182,13 @@ Mock HTTP
     6. Netlify  -> Static files only
     7. Github Pages -> Static files only
     8. Surge*  -> Static files only (Host UI)
+
+
+  Updates
+  -------
+    1. Yeoman
+    2. Github
+    3. npm
+
+  Further
+  -------
