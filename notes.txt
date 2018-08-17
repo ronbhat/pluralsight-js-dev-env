@@ -170,3 +170,15 @@ Mock HTTP
     2. Notifications & integrations
     3. Analytics & filtering
     4. Pricing
+
+
+  Cloud Hosting
+  -------------
+    1. AWS
+    2. Microsoft Azure
+    3. Heroku* (Host API)
+    4. Firebase
+    5. Google Cloud Platform
+    6. Netlify  -> Static files only
+    7. Github Pages -> Static files only
+    8. Surge*  -> Static files only (Host UI)
